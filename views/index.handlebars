@@ -1,0 +1,94 @@
+<!-- Simple header with fixed tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">FCC Projects</span>
+        </div>
+        <!-- Tabs -->
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+            <a href="#url-shortener-tab" class="mdl-layout__tab is-active">URL Shortener</a>
+            <a href="#fixed-tab-2" class="mdl-layout__tab">Image Search API</a>
+            <a href="#fixed-tab-3" class="mdl-layout__tab">Timestamp Miniservice</a>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">FCC Projects</span>
+    </div>
+    <main class="mdl-layout__content">
+        <section class="mdl-layout__tab-panel is-active" id="url-shortener-tab">
+            <div class="page-content">
+
+                <div class="mdl-typography--display-1">Example usage:</div>
+                <p>
+                    <a class="mdl-button mdl-button--icon mdl-js-ripple-effect"
+                       href="{{app_url}}/url/new/https://www.facebook.com"
+                       target="_blank">
+					            <i class="material-icons">open_in_new</i>
+                    </a>
+	                  {{app_url}}/url/new/https://www.facebook.com
+                </p>
+
+                <div class="mdl-typography--display-1">Example output:</div>
+                <pre>{
+  "original_url":"https://www.facebook.com",
+  "new_url":"{{app_url}}/url/5423"
+}
+                </pre>
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+            <div class="page-content">
+
+                <div class="mdl-typography--display-1">Example usage:</div>
+                <p>
+                    <b>Search: </b>
+                    <a class="mdl-button mdl-button--icon mdl-js-ripple-effect"
+                       href="{{app_url}}/api/image-search/lunny+tunes"
+                       target="_blank">
+                        <i class="material-icons">open_in_new</i>
+                    </a>
+	                {{app_url}}/api/image-search/lunny+tunes
+                </p>
+                <p>
+                    <b>Lastest searchs: </b>
+                    <a class="mdl-button mdl-button--icon mdl-js-ripple-effect"
+                       href="{{app_url}}/api/lastest/image-search"
+                       target="_blank">
+                        <i class="material-icons">open_in_new</i>
+                    </a>
+	                {{app_url}}/api/lastest/image-search
+                </p>
+            </div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+            <div class="page-content">
+
+                <div class="mdl-typography--display-1">Example usage:</div>
+                <p>
+                    <a class="mdl-button mdl-button--icon mdl-js-ripple-effect"
+                       href="{{app_url}}/timestamp/January%2011,%201996"
+                       target="_blank">
+                        <i class="material-icons">open_in_new</i>
+                    </a>
+                  {{app_url}}/timestamp/January%2011,%201996
+                </p>
+                <p>
+                    <a class="mdl-button mdl-button--icon mdl-js-ripple-effect"
+                       href="{{app_url}}/timestamp/821334600"
+                       target="_blank">
+                        <i class="material-icons">open_in_new</i>
+                    </a>
+                  {{app_url}}/timestamp/821334600
+                </p>
+
+                <h3>Example output:</h3>
+                <pre>{
+  "unix": 821334600,
+  "natural": "January 11, 1996"
+                    }</pre>
+            </div>
+        </section>
+    </main>
+</div>
+
