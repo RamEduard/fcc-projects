@@ -11,7 +11,7 @@ app.set('view engine', 'handlebars')
 app.set('port', (process.env.PORT || 5000))
 
 // APP URL
-app.set('app_url', 'http://localhost:5000')
+app.set('app_url', 'https://rameduard-fcc.herokuapp.com')
 
 // Bing API_KEY
 app.set('bing_api_key', 'niy2NLWsyAYs6VMp4D4os/d2R+xJS+7tilu1kDIcab4')
